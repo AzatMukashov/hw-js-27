@@ -1,5 +1,6 @@
-export const createArray = () => {
-    const array = [];
+import type {Item} from "../types";
+export const createArray = (): Item[] => {
+    const array: Item[] = [];
     for (let i = 0; i < 36; i++) {
         array.push({hasItem: false, clicked: false});
     }

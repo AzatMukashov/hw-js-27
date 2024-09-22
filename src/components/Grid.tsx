@@ -1,10 +1,6 @@
 import React from 'react';
 import Cell from './Cell.tsx';
-
-interface GridProps {
-    items: { hasItem: boolean; clicked: boolean }[];
-    onCellClick: (index: number) => void;
-}
+import type {GridProps} from "../types";
 
 const Grid: React.FC<GridProps> = ({items, onCellClick}) => {
     return (

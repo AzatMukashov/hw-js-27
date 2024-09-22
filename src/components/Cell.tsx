@@ -1,9 +1,5 @@
 import React from 'react';
-
-interface CellProps {
-    item: { hasItem: boolean; clicked: boolean };
-    onClick: () => void;
-}
+import type {CellProps} from "../types";
 
 const Cell: React.FC<CellProps> = ({item, onClick}) => {
     return (

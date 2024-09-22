@@ -2,9 +2,10 @@ import './App.css'
 import React, {useState} from "react";
 import Grid from "./components/Grid.tsx";
 import {createArray} from "./components/uitls.ts";
+import type {Item} from "./types";
 
 const App: React.FC = () => {
-    const [items, setItems] = useState(createArray());
+    const [items, setItems] = useState<Item[]>(createArray());
     const [attempts, setAttempts] = useState(0);
     const [itemFound, setItemFound] = useState(false);
     const handleReset = () => {
