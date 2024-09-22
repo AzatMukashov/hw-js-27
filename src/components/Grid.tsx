@@ -1,6 +1,6 @@
 import React from 'react';
 import Cell from './Cell.tsx';
-import type {GridProps} from "../types";
+import type {GridProps} from '../types';
 
 const Grid: React.FC<GridProps> = ({items, onCellClick}) => {
     return (

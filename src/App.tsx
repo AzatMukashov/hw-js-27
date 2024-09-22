@@ -1,8 +1,8 @@
-import './App.css'
-import React, {useState} from "react";
-import Grid from "./components/Grid.tsx";
-import {createArray} from "./components/uitls.ts";
-import type {Item} from "./types";
+import './App.css';
+import React, {useState} from 'react';
+import Grid from './components/Grid.tsx';
+import {createArray} from './components/uitls.ts';
+import type {Item} from './types';
 
 const App: React.FC = () => {
     const [items, setItems] = useState<Item[]>(createArray());
@@ -31,4 +31,4 @@ const App: React.FC = () => {
     );
 };
 
-export default App
+export default App;

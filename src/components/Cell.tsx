@@ -1,5 +1,5 @@
 import React from 'react';
-import type {CellProps} from "../types";
+import type {CellProps} from '../types';
 
 const Cell: React.FC<CellProps> = ({item, onClick}) => {
     return (
